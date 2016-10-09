@@ -1,0 +1,89 @@
+<html>
+<head>
+    <title>Payment Demo</title>
+    <link rel="stylesheet" href="css/app.min.css">
+    <script src="js/app.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <h3>Token Details</h3>
+
+    <div>
+        <ul>
+            <li><label>USD to BGP exchange rate:</label><span class="exc-rate"></span></li>
+            <li><label>Initial supply of USD: </label><span class="usd-total-supply"></span></li>
+            <li><label>Initial supply of GBP: </label><span class="gbp-total-supply"></span></li>
+        </ul>
+    </div>
+
+    <h3>Account Balance
+        <button class="refresh btn-default btn">Refresh</button>
+    </h3>
+    <div class="table-responsive">
+        <table class="table">
+            <tr class="account-summary">
+                <th>Account Address</th>
+                <th>USD Balance</th>
+                <th>GBP Balance</th>
+                <th>Ether Balance</th>
+            </tr>
+        </table>
+    </div>
+
+    <h3>Transfer Money</h3>
+
+    <div class="form-horizontal transfer-form">
+        <div class="form-group">
+            <label class="col-md-2 control-label">Currency</label>
+
+            <div class="col-md-4">
+                <select class="currency form-control">
+                    <option value="usd">USD</option>
+                    <option value="gbp">GBP</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">Volume</label>
+
+            <div class="col-md-4">
+                <input type="text" class="volume form-control" value="10">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">From</label>
+
+            <div class="col-md-4">
+                <select class="from-address form-control"></select>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="col-md-2 control-label">To</label>
+
+            <div class="col-md-4">
+                <select class="to-address form-control"></select>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-4">
+                <button class="transfer btn btn-primary">Transfer</button>
+                <button class="cancel btn btn-default">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <h3>Transaction logs</h3>
+
+    <div class="table-responsive">
+        <table class="table">
+            <tr class="logs">
+                <th>Timestamps</th>
+                <th>Details</th>
+            </tr>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

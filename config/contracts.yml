@@ -1,0 +1,12 @@
+development:
+  MyToken:
+    args:
+      - 77
+      - 10000
+      - 10000
+staging:
+  MyToken:
+    args:
+      - 77
+      - 10000
+      - 10000

@@ -1,0 +1,40 @@
+development:
+  rpc_host: localhost
+  rpc_port: 8101
+  rpc_whitelist: "*"
+  minerthreads: 1
+  genesis_block: config/genesis/dev_genesis.json
+  datadir: /tmp/embark
+  chains: config/chains/development.json
+  mine_when_needed: true
+  gas_limit: 500000
+  gas_price: 10000000000000
+  console: false
+  account:
+    init: true
+    password: config/password
+staging:
+  testnet: true
+  rpc_host: localhost
+  rpc_port: 8101
+  rpc_whitelist: "*"
+  datadir: default
+  minerthreads: 1
+  mine_when_needed: true
+  network_id: 0
+  deploy_timeout: 45
+  console: true
+  account:
+    init: false
+    address: 8e5a65533a2b89843e8c9e45235861299159b444
+    password: config/password
+production:
+  rpc_host: localhost
+  rpc_port: 8101
+  rpc_whitelist: "*"
+  datadir: default
+  network_id: 1
+  console: true
+  account:
+    init: false
+    address:
